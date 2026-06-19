@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:#0a0c10}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.45}}
+  ::selection{background:rgba(183,148,255,0.32);color:#fff}
+</style>
+</helmet>
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;background:#0a0c10;color:#E9EAEE;min-height:100vh;overflow-x:hidden;">
+
+  <!-- HEADER -->
+  <header style="position:relative;overflow:hidden;padding:96px 0 80px;border-bottom:1px solid rgba(255,255,255,0.06);">
+    <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:760px;height:420px;background:radial-gradient(closest-side,rgba(124,92,214,0.30),transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;top:40px;right:-80px;width:340px;height:340px;background:radial-gradient(closest-side,rgba(99,102,241,0.22),transparent 70%);pointer-events:none;"></div>
+    <div style="position:relative;z-index:2;max-width:880px;margin:0 auto;padding:0 32px;animation:fadeUp .8s ease both;">
+      <div style="display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:1.5px;color:#cdb6ff;border:1px solid rgba(183,148,250,0.35);background:rgba(183,148,250,0.08);padding:7px 14px;border-radius:999px;margin-bottom:28px;">
+        <span style="width:7px;height:7px;border-radius:50%;background:#b0d35f;animation:pulse 2s ease-in-out infinite;"></span>STATUS · PRE-DEPLOYMENT
+      </div>
+      <h1 style="font-size:clamp(56px,10vw,104px);font-weight:600;line-height:0.92;letter-spacing:-3px;margin:0 0 18px;color:#F4F4F7;">GPSMS</h1>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:clamp(15px,2.2vw,19px);color:#B794FF;margin-bottom:26px;">SMS&nbsp; →&nbsp; Email forwarding service</div>
+      <p style="font-size:clamp(17px,2.3vw,21px);line-height:1.55;color:#aeb2bd;max-width:560px;margin:0;">When an SMS arrives at a monitored number, it's relayed to email in seconds — quiet, reliable, and built for production.</p>
+    </div>
+  </header>
+
+  <!-- WHAT WE DO -->
+  <section style="padding:96px 0;">
+    <div style="max-width:880px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:0.7fr 1.3fr;gap:48px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:#B794FF;">01 / WHAT IT DOES</div>
+      <p style="font-size:19px;line-height:1.7;color:#bcc0c9;margin:0;">GPSMS automatically forwards SMS messages to email addresses. When a text arrives at a monitored phone number, it is instantly relayed to the configured email recipients — no dashboards to babysit, no manual steps.</p>
+    </div>
+  </section>
+
+  <!-- FLOW / FEATURES -->
+  <section style="padding:0 0 96px;">
+    <div style="max-width:880px;margin:0 auto;padding:0 32px;">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+
+        <div style="background:#111521;border:1px solid rgba(255,255,255,0.07);border-radius:15px;padding:26px 22px;">
+          <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid rgba(183,148,250,0.35);background:rgba(183,148,250,0.08);font-family:'JetBrains Mono',monospace;font-size:13px;color:#B794FF;margin-bottom:20px;">↓</div>
+          <h3 style="font-size:16px;font-weight:600;margin:0 0 6px;color:#F4F4F7;">SMS Inbound</h3>
+          <p style="font-size:13.5px;line-height:1.55;color:#878d98;margin:0;">Receive text messages at a monitored number.</p>
+        </div>
+
+        <div style="background:#111521;border:1px solid rgba(255,255,255,0.07);border-radius:15px;padding:26px 22px;">
+          <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid rgba(183,148,250,0.35);background:rgba(183,148,250,0.08);font-family:'JetBrains Mono',monospace;font-size:13px;color:#B794FF;margin-bottom:20px;">→</div>
+          <h3 style="font-size:16px;font-weight:600;margin:0 0 6px;color:#F4F4F7;">Instant Forward</h3>
+          <p style="font-size:13.5px;line-height:1.55;color:#878d98;margin:0;">Automatic relay within seconds of arrival.</p>
+        </div>
+
+        <div style="background:#111521;border:1px solid rgba(255,255,255,0.07);border-radius:15px;padding:26px 22px;">
+          <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid rgba(183,148,250,0.35);background:rgba(183,148,250,0.08);font-family:'JetBrains Mono',monospace;font-size:13px;color:#B794FF;margin-bottom:20px;">@</div>
+          <h3 style="font-size:16px;font-weight:600;margin:0 0 6px;color:#F4F4F7;">Email Delivery</h3>
+          <p style="font-size:13.5px;line-height:1.55;color:#878d98;margin:0;">Delivered straight to the configured inbox.</p>
+        </div>
+
+        <div style="background:#111521;border:1px solid rgba(255,255,255,0.07);border-radius:15px;padding:26px 22px;">
+          <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid rgba(183,148,250,0.35);background:rgba(183,148,250,0.08);font-family:'JetBrains Mono',monospace;font-size:13px;color:#B794FF;margin-bottom:20px;">✓</div>
+          <h3 style="font-size:16px;font-weight:600;margin:0 0 6px;color:#F4F4F7;">Reliable</h3>
+          <p style="font-size:13.5px;line-height:1.55;color:#878d98;margin:0;">Low-volume, production-grade delivery.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASE -->
+  <section style="padding:0 0 110px;">
+    <div style="max-width:880px;margin:0 auto;padding:0 32px;">
+      <div style="position:relative;background:#111521;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:48px;overflow:hidden;">
+        <div style="position:absolute;bottom:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(124,92,214,0.20),transparent 70%);pointer-events:none;"></div>
+        <div style="position:relative;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:#B794FF;margin-bottom:22px;">02 / USE CASE</div>
+        <p style="position:relative;font-size:clamp(20px,3vw,28px);line-height:1.5;font-weight:500;color:#e6e8ec;margin:0;max-width:640px;letter-spacing:-0.4px;">Designed for transactional SMS notification workflows — when messages need to reach email inboxes for logging, archiving, or further processing, GPSMS provides reliable, automatic forwarding with minimal latency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(255,255,255,0.06);padding:34px 0;">
+    <div style="max-width:880px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+      <div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#9498a2;">
+        <span style="width:7px;height:7px;border-radius:50%;background:#B794FF;"></span>GPSMS
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#5a5f6a;">Transactional SMS → Email · Production</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
