@@ -1,3 +1,4 @@
+// co-authored-by claude
 class Component extends DCLogic {
   componentDidMount() {
     this.startAurora();
